@@ -27,4 +27,6 @@ static_pages:
       url: /company
 
 # Build settings
+sass:
+    sass_dir: _sass
 markdown: kramdown
