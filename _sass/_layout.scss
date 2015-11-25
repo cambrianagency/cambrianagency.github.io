@@ -1,0 +1,51 @@
+%reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button, .button {
+  border: 1px solid #fff;
+  color: rgba(#fff, .75);
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+.navbar-list {
+  @extend %reset-list;
+  li {
+    display: inline-block;
+    margin-right: 41px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    opacity: .75;
+  }
+}
+
+
+.header {
+  background: #33cc66;
+  text-align: center;
+  height: 848px;
+  .header-container {
+    position: relative;
+    padding-top: 60px;
+  }
+  .logo {
+    width: 61px;
+    position: absolute;
+    left: 0;
+    top: 29px;
+  }
+  .button {
+    position: absolute;
+    right: 0;
+    top: 51px;
+  }
+}

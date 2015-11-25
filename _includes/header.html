@@ -1,5 +1,17 @@
-{% for page in site.static_pages %}
-  {% if page.title %}
-  <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-  {% endif %}
-{% endfor %}
+<section class="header">
+  <div class="header-container container">
+    <img class="logo" src="images/logo.svg">
+    <nav class="navbar">
+        <ul class="navbar-list">
+          {% for page in site.static_pages %}
+            {% if page.title %}
+              <li class="navbar-item">
+                <a class="navbar-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    </nav>
+    <a class="button" href="/">Contact</a>
+  </div>
+</section>
